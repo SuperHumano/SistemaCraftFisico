@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://caletgbtgberf"]
+
+[ext_resource type="Script" path="res://Roteiros/Jogador/Jogador.gd" id="1_glh13"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_38n5l"]
+radius = 0.31
+height = 1.83
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_d2oae"]
+radius = 0.31478
+height = 1.86014
+
+[node name="Jogador" type="CharacterBody3D"]
+collision_layer = 2
+floor_stop_on_slope = false
+floor_max_angle = 1.02974
+script = ExtResource("1_glh13")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.934393, 0)
+mesh = SubResource("CapsuleMesh_38n5l")
+
+[node name="Neck" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.50009, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Neck"]
+
+[node name="RayCast3D" type="RayCast3D" parent="Neck/Camera3D"]
+target_position = Vector3(0, 0, -40)
+
+[node name="Marker3D" type="Marker3D" parent="Neck/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.34571)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.947173, 0)
+shape = SubResource("CapsuleShape3D_d2oae")

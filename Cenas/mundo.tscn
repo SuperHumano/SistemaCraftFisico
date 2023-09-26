@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3 uid="uid://5be1ocolwl6e"]
+
+[ext_resource type="PackedScene" uid="uid://cfc8c7gkyc463" path="res://Cenas/Objetos&Ambiente/Objetos/Materiais/stick.tscn" id="3_wks4d"]
+[ext_resource type="PackedScene" uid="uid://cbppi0icxv8vn" path="res://Cenas/Objetos&Ambiente/Objetos/Materiais/iron.tscn" id="4_rq4eb"]
+[ext_resource type="PackedScene" uid="uid://b4vh8oxjqilca" path="res://Cenas/Objetos&Ambiente/Objetos/Materiais/diamond.tscn" id="5_03r6g"]
+[ext_resource type="PackedScene" uid="uid://ddeqr2bk65eso" path="res://Cenas/Objetos&Ambiente/casa_testes.tscn" id="6_fij7u"]
+[ext_resource type="PackedScene" uid="uid://dwgjpyfb61q27" path="res://Cenas/Objetos&Ambiente/Objetos/anvil.tscn" id="8_lyxaq"]
+[ext_resource type="PackedScene" uid="uid://caletgbtgberf" path="res://Cenas/Jogador/jogador.tscn" id="9_nwco0"]
+[ext_resource type="PackedScene" uid="uid://ckf3sb1tdvnck" path="res://Cenas/Objetos&Ambiente/Objetos/wall_frame.tscn" id="9_uheyn"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ttpjc"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_ip8lx"]
+sky_material = SubResource("ProceduralSkyMaterial_ttpjc")
+
+[sub_resource type="Environment" id="Environment_86t1x"]
+background_mode = 2
+sky = SubResource("Sky_ip8lx")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Mundo" type="Node"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866024, -0.433016, 0.25, 0.416492, -0.348083, 0.839865, -0.276654, 0.831466, 0.481796, 0, -1.85971, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_86t1x")
+
+[node name="Anvil" parent="." instance=ExtResource("8_lyxaq")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.000716269, -3.85762)
+
+[node name="WallFrame" parent="." instance=ExtResource("9_uheyn")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.54663, -4.56668)
+
+[node name="casa para testes" parent="." instance=ExtResource("6_fij7u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.65707, 0, -0.584546)
+
+[node name="Jogador" parent="." instance=ExtResource("9_nwco0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25572, 4.76837e-07, 0.271389)
+
+[node name="Objetos" type="Node" parent="."]
+
+[node name="Diamond2" parent="Objetos" instance=ExtResource("5_03r6g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.82128, 0.485483, -3.08532)
+
+[node name="Stick3" parent="Objetos" instance=ExtResource("3_wks4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.15256, 0.485483, -0.765283)
+
+[node name="Iron3" parent="Objetos" instance=ExtResource("4_rq4eb")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2.34289, 0.485483, 1.87267)
+
+[node name="Iron4" parent="Objetos" instance=ExtResource("4_rq4eb")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2.52213, 0.485483, 1.17348)
+
+[node name="Stick2" parent="Objetos" instance=ExtResource("3_wks4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.28962, 0.639455, -1.2093)
+
+[node name="Stick" parent="Objetos" instance=ExtResource("3_wks4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.54502, 0.570572, -0.948245)
+
+[node name="Diamond" parent="Objetos" instance=ExtResource("5_03r6g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.53477, 0.485354, -3.07109)
+
+[node name="Iron" parent="Objetos" instance=ExtResource("4_rq4eb")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -1.46659, 0.621464, 1.56216)
+
+[node name="Iron2" parent="Objetos" instance=ExtResource("4_rq4eb")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2.91319, 0.485483, 0.587936)

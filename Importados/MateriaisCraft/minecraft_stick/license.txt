@@ -1,0 +1,11 @@
+Model Information:
+* title:	Minecraft Stick
+* source:	https://sketchfab.com/3d-models/minecraft-stick-d4c7dce8174242468677788a07052860
+* author:	Coller (https://sketchfab.com/TheCollerroller)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Minecraft Stick" (https://sketchfab.com/3d-models/minecraft-stick-d4c7dce8174242468677788a07052860) by Coller (https://sketchfab.com/TheCollerroller) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

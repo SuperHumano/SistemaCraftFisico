@@ -1,0 +1,11 @@
+Model Information:
+* title:	Minecraft Iron Sword
+* source:	https://sketchfab.com/3d-models/minecraft-iron-sword-9328f7ff2fc647758a66387afe72bf89
+* author:	EnvyMe2010 (https://sketchfab.com/EnvyMe2010)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Minecraft Iron Sword" (https://sketchfab.com/3d-models/minecraft-iron-sword-9328f7ff2fc647758a66387afe72bf89) by EnvyMe2010 (https://sketchfab.com/EnvyMe2010) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ObjectClassManeger" load_steps=4 format=3 uid="uid://cpx4nixq0asen"]
+
+[ext_resource type="Script" path="res://Roteiros/Objetos/Bigorna/Classes/IronSword.gd" id="1_ato4f"]
+[ext_resource type="Script" path="res://Roteiros/Objetos/Bigorna/Classes/DiamondSword.gd" id="2_ec4tl"]
+[ext_resource type="Script" path="res://Roteiros/Recursos_Objetos/Modelo/obj_class_maneger.gd" id="3_3vgmy"]
+
+[resource]
+script = ExtResource("3_3vgmy")
+obj_classes = Array[GDScript]([ExtResource("1_ato4f"), ExtResource("2_ec4tl")])

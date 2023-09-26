@@ -1,0 +1,11 @@
+Model Information:
+* title:	Item frame
+* source:	https://sketchfab.com/3d-models/item-frame-2c80bdc25b45436f8e70963d6424127c
+* author:	owencroft0 (https://sketchfab.com/owencroft0)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Item frame" (https://sketchfab.com/3d-models/item-frame-2c80bdc25b45436f8e70963d6424127c) by owencroft0 (https://sketchfab.com/owencroft0) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

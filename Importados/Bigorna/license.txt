@@ -1,0 +1,11 @@
+Model Information:
+* title:	Minecraft Anvil
+* source:	https://sketchfab.com/3d-models/minecraft-anvil-10c09713b2d140c1b104b1b3adbd1e66
+* author:	Coller (https://sketchfab.com/TheCollerroller)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Minecraft Anvil" (https://sketchfab.com/3d-models/minecraft-anvil-10c09713b2d140c1b104b1b3adbd1e66) by Coller (https://sketchfab.com/TheCollerroller) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
