@@ -1,7 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://vmhqfhf6adc3"]
+[gd_scene load_steps=7 format=3 uid="uid://vmhqfhf6adc3"]
 
 [ext_resource type="Texture2D" uid="uid://djx48gb0wml7w" path="res://Importados/ProdutosCraft/minecraft_diamond_sword/minecraft_diamond-sword_0.png" id="1_21fjc"]
-[ext_resource type="Script" path="res://Roteiros/Objetos/Produtos/diamond_sword.gd" id="1_il3jo"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3gmdm"]
 resource_name = "material"
@@ -42,46 +41,28 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_8qtn0")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_alxsv"]
-size = Vector3(0.375, 0.06, 0.230543)
+[sub_resource type="BoxShape3D" id="BoxShape3D_ig5sl"]
+size = Vector3(0.195, 0.06, 1.315)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_rxm6p"]
-size = Vector3(0.375, 0.06, 0.191565)
+[sub_resource type="BoxShape3D" id="BoxShape3D_jin4s"]
+size = Vector3(0.215574, 0.06, 0.16)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_g2kgc"]
-size = Vector3(0.220746, 0.06, 0.14843)
-
-[node name="Diamond_Sword" type="RigidBody3D" groups=["objeto"]]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.01, 0)
-collision_mask = 3
-continuous_cd = true
-script = ExtResource("1_il3jo")
+[node name="DiamondSword" type="RigidBody3D" groups=["objeto"]]
+contact_monitor = true
 
 [node name="Object_2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, -4.37114e-08, 0, 4.37114e-08, 1, 0, -7.52637e-10, 0.0172183)
+transform = Transform3D(1, 0, 0, 0, 2.22045e-16, 1, 0, -1, 2.22045e-16, 0, 0, 0)
 mesh = SubResource("ArrayMesh_j7vtw")
 skeleton = NodePath("")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.707107, -1.28028e-08, -0.707107, -0.707107, -3.09086e-08, -0.707107, -1.28028e-08, 1, -3.09086e-08, -0.337429, 0.33971, 0.0170716)
-shape = SubResource("BoxShape3D_alxsv")
-
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.707107, -1.28028e-08, -0.707107, -0.707107, -3.09086e-08, -0.707107, -1.28028e-08, 1, -3.09086e-08, -0.0550433, 0.0675517, 0.0170716)
-shape = SubResource("BoxShape3D_alxsv")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.707107, 7.10543e-15, -0.707107, -0.707107, -4.37114e-08, -0.707107, -3.09086e-08, 1, -3.09086e-08, 0.334762, -0.3315, 0.0224758)
-shape = SubResource("BoxShape3D_rxm6p")
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)
+shape = SubResource("BoxShape3D_ig5sl")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.707107, 6.18172e-08, -0.707107, 0.707107, -1.81058e-08, 0.707107, 3.09086e-08, -1, -5.65142e-08, -0.0257476, -0.293023, 0.0181682)
-shape = SubResource("BoxShape3D_g2kgc")
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -0.0375367, 0, 0.279609)
+shape = SubResource("BoxShape3D_jin4s")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.707107, 6.18172e-08, -0.707107, 0.707107, -1.81058e-08, 0.707107, 3.09086e-08, -1, -5.65142e-08, 0.135532, -0.129494, 0.0181682)
-shape = SubResource("BoxShape3D_g2kgc")
-
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.707107, 6.18172e-08, -0.707107, 0.707107, -1.81058e-08, 0.707107, 3.09086e-08, -1, -5.65142e-08, 0.295329, 0.0341668, 0.0181682)
-shape = SubResource("BoxShape3D_g2kgc")
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0.278234, 0, -0.0338657)
+shape = SubResource("BoxShape3D_jin4s")
