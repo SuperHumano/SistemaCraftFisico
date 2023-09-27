@@ -45,28 +45,28 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25572, 4.76837e-07, 0.27138
 [node name="Objetos" type="Node" parent="."]
 
 [node name="Diamond2" parent="Objetos" instance=ExtResource("5_03r6g")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.82128, 0.485483, -3.08532)
+transform = Transform3D(0.932513, 0, -0.361136, 0, 1, 0, 0.361136, 0, 0.932513, -2.75297, 0.650471, -3.30832)
 
 [node name="Stick3" parent="Objetos" instance=ExtResource("3_wks4d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.15256, 0.485483, -0.765283)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35472, 0.485483, -3.65606)
 
 [node name="Iron3" parent="Objetos" instance=ExtResource("4_rq4eb")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2.34289, 0.485483, 1.87267)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -1.45425, 0.620965, -3.55212)
 
 [node name="Iron4" parent="Objetos" instance=ExtResource("4_rq4eb")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2.52213, 0.485483, 1.17348)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -1.49753, 0.485483, -3.40034)
 
 [node name="Stick2" parent="Objetos" instance=ExtResource("3_wks4d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.28962, 0.639455, -1.2093)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.82778, 0.639455, -3.41994)
 
 [node name="Stick" parent="Objetos" instance=ExtResource("3_wks4d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.54502, 0.570572, -0.948245)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.19481, 0.570572, -3.60055)
 
 [node name="Diamond" parent="Objetos" instance=ExtResource("5_03r6g")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.53477, 0.485354, -3.07109)
 
 [node name="Iron" parent="Objetos" instance=ExtResource("4_rq4eb")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -1.46659, 0.621464, 1.56216)
+transform = Transform3D(0.93262, 0.36086, 1.57737e-08, 0, -4.37114e-08, 1, 0.36086, -0.93262, -4.07661e-08, -1.48594, 0.746146, -3.50524)
 
 [node name="Iron2" parent="Objetos" instance=ExtResource("4_rq4eb")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2.91319, 0.485483, 0.587936)
+transform = Transform3D(0.83268, -0.553755, -2.42054e-08, 0, -4.37114e-08, 1, -0.553755, -0.83268, -3.63976e-08, -1.14249, 0.35848, -3.47379)

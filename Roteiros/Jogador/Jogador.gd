@@ -32,7 +32,10 @@ func _unhandled_input(event: InputEvent) -> void:
 	
 	# Liberta o cursor do mouse
 	if Input.is_action_just_pressed("sair"):
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		else:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
 	# Ativa a função interagir
 	if Input.is_action_just_pressed("interagir"):
