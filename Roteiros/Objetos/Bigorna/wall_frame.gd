@@ -1,23 +1,29 @@
 extends StaticBody3D
 
 # Objetos mostraveis
-@export var obj_class_maneger: ObjectClassManeger
 @onready var iron_sword: Node3D = $IronSword
 @onready var diamond_sword: Node3D = $DiamondSword
 
-# Propriedades ativa/desativa visibilidade
-var objects: Array[Node3D]
+var relatives: Array[Array]
+var curr_class: GDScript
+
 var objects_quantity: int
 var i : int = 0
 
 func _ready() -> void:
-	objects = [iron_sword, diamond_sword]
-	objects_quantity = len(objects)
+	# Define Relativos
+	relatives = [[iron_sword, IronSword], [diamond_sword, DiamondSword]]
+	# Define a classe do momento
+	curr_class = relatives[i][1]
+	# Define a quantidade de elementos
+	objects_quantity = len(relatives)
 	
+
 func interact():
-	objects[i].visible = false
+	# Muda o quadro visível
+	relatives[i][0].visible = false
 	i += 1
 	i = i % objects_quantity
-	obj_class_maneger.i = i
-	objects[i].visible = true
-	
+	relatives[i][0].visible = true
+	# Define a classe do momento
+	curr_class = relatives[i][1]

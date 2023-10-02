@@ -90,5 +90,5 @@ func _interact():
 		object_picked.set_collision_layer_value(1,true)
 		object_picked.angular_damp = 0
 		# Aplica movimento ao objeto para que o mesmo seja percebido pela Area3D
-		object_picked.set_linear_velocity(Vector3.UP * 2)
+		object_picked.apply_central_impulse(Vector3.UP * 2)
 		object_picked = null

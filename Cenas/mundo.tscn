@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://5be1ocolwl6e"]
+[gd_scene load_steps=10 format=3 uid="uid://5be1ocolwl6e"]
 
 [ext_resource type="PackedScene" uid="uid://cfc8c7gkyc463" path="res://Cenas/Objetos&Ambiente/Objetos/Materiais/stick.tscn" id="3_wks4d"]
 [ext_resource type="PackedScene" uid="uid://cbppi0icxv8vn" path="res://Cenas/Objetos&Ambiente/Objetos/Materiais/iron.tscn" id="4_rq4eb"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://ddeqr2bk65eso" path="res://Cenas/Objetos&Ambiente/casa_testes.tscn" id="6_fij7u"]
 [ext_resource type="PackedScene" uid="uid://dwgjpyfb61q27" path="res://Cenas/Objetos&Ambiente/Objetos/anvil.tscn" id="8_lyxaq"]
 [ext_resource type="PackedScene" uid="uid://caletgbtgberf" path="res://Cenas/Jogador/jogador.tscn" id="9_nwco0"]
-[ext_resource type="PackedScene" uid="uid://ckf3sb1tdvnck" path="res://Cenas/Objetos&Ambiente/Objetos/wall_frame.tscn" id="9_uheyn"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ttpjc"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -29,12 +28,6 @@ shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_86t1x")
-
-[node name="Anvil" parent="." instance=ExtResource("8_lyxaq")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.000716269, -3.85762)
-
-[node name="WallFrame" parent="." instance=ExtResource("9_uheyn")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.54663, -4.56668)
 
 [node name="casa para testes" parent="." instance=ExtResource("6_fij7u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.65707, 0, -0.584546)
@@ -70,3 +63,6 @@ transform = Transform3D(0.93262, 0.36086, 1.57737e-08, 0, -4.37114e-08, 1, 0.360
 
 [node name="Iron2" parent="Objetos" instance=ExtResource("4_rq4eb")]
 transform = Transform3D(0.83268, -0.553755, -2.42054e-08, 0, -4.37114e-08, 1, -0.553755, -0.83268, -3.63976e-08, -1.14249, 0.35848, -3.47379)
+
+[node name="Anvil" parent="." instance=ExtResource("8_lyxaq")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.078849, 0, -3.94836)
