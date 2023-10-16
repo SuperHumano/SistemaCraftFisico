@@ -10,7 +10,7 @@ const SPEED: float = 5
 const JUMP_VELOCITY: float = 4.5
 
 # Define o alcance de interações
-const RANGE: float = 2.0
+const RANGE: float = 4
 
 # Definie a gravidade
 var gravity: float = 9.8

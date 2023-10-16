@@ -1,7 +1,6 @@
-[gd_scene load_steps=24 format=3 uid="uid://ckf3sb1tdvnck"]
+[gd_scene load_steps=23 format=3 uid="uid://ckf3sb1tdvnck"]
 
 [ext_resource type="Script" path="res://Roteiros/Objetos/Bigorna/wall_frame.gd" id="1_afjb7"]
-[ext_resource type="Resource" uid="uid://cpx4nixq0asen" path="res://Roteiros/Recursos_Objetos/ObjClassManeger.tres" id="2_1er67"]
 [ext_resource type="Texture2D" uid="uid://b4315livp3cy7" path="res://Importados/ProdutosCraft/minecraft_iron_sword/textures/Box002_mtl_baseColor.jpeg" id="3_258uk"]
 [ext_resource type="Texture2D" uid="uid://c5xh44m0b7hay" path="res://Importados/Quadro/textures/material_0_baseColor.png" id="3_edewp"]
 [ext_resource type="Texture2D" uid="uid://b6hyh1dkt5336" path="res://Importados/ProdutosCraft/minecraft_iron_sword/textures/Box003_mtl_baseColor.jpeg" id="4_2d5pt"]
@@ -208,8 +207,8 @@ shadow_mesh = SubResource("ArrayMesh_8qtn0")
 size = Vector3(1.1, 0.085, 1.1)
 
 [node name="WallFrame" type="StaticBody3D" groups=["interagivel"]]
+transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, 0, 1.5, 0)
 script = ExtResource("1_afjb7")
-obj_class_maneger = ExtResource("2_1er67")
 
 [node name="Object_6" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_8pj52")

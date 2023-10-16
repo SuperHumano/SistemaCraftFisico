@@ -1,13 +1,15 @@
-[gd_scene load_steps=37 format=3 uid="uid://dwgjpyfb61q27"]
+[gd_scene load_steps=39 format=3 uid="uid://dwgjpyfb61q27"]
 
 [ext_resource type="Script" path="res://Roteiros/Objetos/Bigorna/anvil.gd" id="1_5odmv"]
 [ext_resource type="Texture2D" uid="uid://bs78r5v4aft7d" path="res://Importados/Bigorna/textures/Anvil_baseColor.png" id="3_rktv4"]
 [ext_resource type="AudioStream" uid="uid://bl1ljmj0uoqh4" path="res://Audios/BigornaCraft/bing1-91919.mp3" id="4_4phc8"]
 [ext_resource type="Script" path="res://Roteiros/Objetos/Bigorna/wall_frame.gd" id="5_df7tm"]
+[ext_resource type="Script" path="res://Roteiros/Objetos/Produtos/iron_sword.gd" id="6_bapu1"]
 [ext_resource type="Texture2D" uid="uid://c5xh44m0b7hay" path="res://Importados/Quadro/textures/material_0_baseColor.png" id="6_qd41t"]
 [ext_resource type="Texture2D" uid="uid://b4315livp3cy7" path="res://Importados/ProdutosCraft/minecraft_iron_sword/textures/Box002_mtl_baseColor.jpeg" id="7_ixfqh"]
 [ext_resource type="Texture2D" uid="uid://b6hyh1dkt5336" path="res://Importados/ProdutosCraft/minecraft_iron_sword/textures/Box003_mtl_baseColor.jpeg" id="8_jsheq"]
 [ext_resource type="Texture2D" uid="uid://jkeqfrtp3xan" path="res://Importados/ProdutosCraft/minecraft_iron_sword/textures/Box001_mtl_baseColor.jpeg" id="9_2hk3v"]
+[ext_resource type="Script" path="res://Roteiros/Objetos/Produtos/diamond_sword.gd" id="10_6bpt1"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_onkn2"]
 friction = 0.4
@@ -334,7 +336,7 @@ stream = ExtResource("4_4phc8")
 max_distance = 2.0
 
 [node name="WallFrame" type="StaticBody3D" parent="." groups=["interagivel"]]
-transform = Transform3D(4.37114e-08, 4.37114e-08, -1, -4.37114e-08, -1, -4.37114e-08, -1, 4.37114e-08, -4.37114e-08, 0, 0.632, 1.58708)
+transform = Transform3D(4.37114e-08, 3.82137e-15, -1, 8.74228e-08, -1, 0, -1, -8.74228e-08, -4.37114e-08, 0, 0.65, 1.243)
 script = ExtResource("5_df7tm")
 
 [node name="Object_6" type="MeshInstance3D" parent="WallFrame"]
@@ -342,31 +344,33 @@ mesh = SubResource("ArrayMesh_8pj52")
 skeleton = NodePath("")
 
 [node name="IronSword" type="Node3D" parent="WallFrame"]
+script = ExtResource("6_bapu1")
 
 [node name="Box002_Box002_mtl_0" type="MeshInstance3D" parent="WallFrame/IronSword"]
 transform = Transform3D(-4.37114e-08, -1, 4.44089e-16, 0, 4.44089e-16, 1, -1, 4.37114e-08, -1.94118e-23, 0.183419, 0.0370786, 0.182309)
-transparency = 0.6
+transparency = 1.0
 mesh = SubResource("ArrayMesh_cxp0o")
 skeleton = NodePath("")
 
 [node name="Box003_Box003_mtl_0" type="MeshInstance3D" parent="WallFrame/IronSword"]
 transform = Transform3D(-4.37114e-08, -1, 4.44089e-16, 0, 4.44089e-16, 1, -1, 4.37114e-08, -1.94118e-23, 0.0634194, 0.0370786, 0.0623087)
-transparency = 0.6
+transparency = 1.0
 mesh = SubResource("ArrayMesh_h5x7i")
 skeleton = NodePath("")
 
 [node name="Box001_Box001_mtl_0" type="MeshInstance3D" parent="WallFrame/IronSword"]
 transform = Transform3D(-4.37114e-08, -1, 4.44089e-16, 0, 4.44089e-16, 1, -1, 4.37114e-08, -1.94118e-23, 0.393419, 0.0370786, 0.392309)
-transparency = 0.6
+transparency = 1.0
 mesh = SubResource("ArrayMesh_ti25i")
 skeleton = NodePath("")
 
 [node name="DiamondSword" type="Node3D" parent="WallFrame"]
 visible = false
+script = ExtResource("10_6bpt1")
 
 [node name="Object_2" type="MeshInstance3D" parent="WallFrame/DiamondSword"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0.00223541, 0.0670663, 0.00232086)
-transparency = 0.6
+transparency = 1.0
 mesh = SubResource("ArrayMesh_j7vtw")
 skeleton = NodePath("")
 
