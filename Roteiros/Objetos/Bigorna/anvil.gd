@@ -29,7 +29,7 @@ func interact():
 	obj_class = wall_frame.curr_class.new()
 	
 	if obj_class.has_requirements(curr_objects):
-		obj_class.queue_requirements(curr_objects)
+		obj_class.eliminate_requirements(curr_objects)
 		var instance: RigidBody3D = obj_class.instantiate_object(spawn_point)
 		particles.emitting = true
 		audio.play()

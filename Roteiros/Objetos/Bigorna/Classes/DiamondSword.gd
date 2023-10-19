@@ -5,7 +5,7 @@ var product = preload("res://Cenas/Objetos&Ambiente/Objetos/Produtos/diamond_swo
 func has_requirements(curr_materials: Dictionary) -> bool:
 	return len(curr_materials.Diamante) > 1 and len(curr_materials.Pau) > 0
 
-func queue_requirements(curr_materials: Dictionary) -> void:
+func eliminate_requirements(curr_materials: Dictionary) -> void:
 	for i in range(0,2):
 		curr_materials.Diamante[i].queue_free()
 	curr_materials.Pau[0].queue_free()
